@@ -4,7 +4,7 @@ const Experience = () => {
   return (
         <section>
       <h2>Skills</h2>
-      <div>
+      <div style={{ fontSize: '19px' }}>
         <ul>
           <li>HTML5</li>
           <li>CSS3</li>
