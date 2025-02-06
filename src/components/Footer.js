@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
-const Footer = () => {
+const Footer = ({ footer }) => {
   return (
     <footer>
-      <p style={{ color: '#7d7d7d' }}>&copy; 2024 Mykhaylo Maslyuk. All Rights Reserved.</p>
+      <p style={{ color: "#7d7d7d" }}>{footer}</p>
     </footer>
   );
 };

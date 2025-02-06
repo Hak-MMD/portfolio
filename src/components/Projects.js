@@ -1,19 +1,21 @@
-import React from 'react';
+import React from "react";
 
-const Projects = () => {
-  const projects = [
-   {
-      title: 'Stock Trading App',
-      description: 'This app provides you with a demo account where you can buy/sell shares to improve your trading experience.',
-      link: 'https://github.com/Hak-MMD/mern_shares',
-    },
-    {
-      title: 'Helper',
-      description: 'This is a program with the help of which you will ask or answer questions on any topic with ease!s',
-      link: 'https://github.com/Mykola-DMT/Helper',
-    },
-    // Add more projects as needed
-  ];
+const Projects = ({ projects }) => {
+  // const projects = [
+  //   {
+  //     title: "Stock Trading App",
+  //     description:
+  //       "This app provides you with a demo account where you can buy/sell shares to improve your trading experience.",
+  //     link: "https://github.com/Hak-MMD/mern_shares",
+  //   },
+  //   {
+  //     title: "Helper",
+  //     description:
+  //       "This is a program with the help of which you will ask or answer questions on any topic with ease!s",
+  //     link: "https://github.com/Mykola-DMT/Helper",
+  //   },
+  //   // Add more projects as needed
+  // ];
 
   return (
     <section>
