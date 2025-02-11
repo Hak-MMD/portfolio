@@ -13,12 +13,14 @@ const ProtectedRoutes = ({ children }) => {
       const password = localStorage.getItem("password");
 
       if (username && password) {
-        console.log(444);
         try {
-          const response = await axios.post("http://localhost:5500/login", {
-            role: username,
-            pass: password,
-          });
+          const response = await axios.post(
+            "https://api-portfolio-hak.onrender.com/login",
+            {
+              role: username,
+              pass: password,
+            }
+          );
 
           if (response.status === 200) {
             setIsAuth(true);

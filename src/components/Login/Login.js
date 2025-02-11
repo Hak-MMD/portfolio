@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from "react";
-import "./Login.css";
+import "./Login.module.css";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
@@ -30,6 +30,7 @@ const Login = () => {
         localStorage.setItem("username", response.data.role);
         localStorage.setItem("password", response.data.pass);
         localStorage.setItem("isAuth", "true"); // Store auth status
+        console.log("login");
         navigate("/admin");
       }
     } catch (error) {
