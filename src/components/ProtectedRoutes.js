@@ -8,7 +8,6 @@ const ProtectedRoutes = ({ children }) => {
 
   useEffect(() => {
     const checkAuth = async () => {
-      console.log(111);
       const username = localStorage.getItem("username");
       const password = localStorage.getItem("password");
 
@@ -32,7 +31,6 @@ const ProtectedRoutes = ({ children }) => {
           localStorage.removeItem("isAuth"); // Clear auth if failed
         }
       } else {
-        console.log(333);
         setIsAuth(false);
       }
       setLoading(false); // Mark loading as complete

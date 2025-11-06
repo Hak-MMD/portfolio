@@ -26,9 +26,7 @@ function Page() {
       const response = await axios.get(
         "https://api-portfolio-hak.onrender.com/data"
       );
-      console.log("response:   ", response.data[0]);
       setData(response.data[0]);
-      console.log("data:   ", data);
     } catch (error) {
       console.log(error);
     }
@@ -40,7 +38,6 @@ function Page() {
 
   // Conditional rendering to ensure data is available before rendering child components
   if (data.about.split("").length > 0) {
-    console.log(222, data);
     return (
       <>
         <Header />

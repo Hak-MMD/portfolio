@@ -21,8 +21,8 @@ const Admin = () => {
         .get("https://api-portfolio-hak.onrender.com/data")
         .then((response) => {
           setData(response.data[0]);
-          console.log("response:   ", response.data[0]);
-          console.log("data:   ", data);
+          // console.log("response:   ", response.data[0]);
+          // console.log("data:   ", data);
         });
     } catch (error) {
       console.log(error);
@@ -30,10 +30,10 @@ const Admin = () => {
   };
 
   const editData = async () => {
-    console.log(
-      localStorage.getItem("username"),
-      localStorage.getItem("password")
-    );
+    // console.log(
+    //   localStorage.getItem("username"),
+    //   localStorage.getItem("password")
+    // );
 
     console.log("data:  ", data);
     try {

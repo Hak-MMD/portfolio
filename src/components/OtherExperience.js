@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const OtherExperience = ({ experience }) => {
+const OtherExperience = () => {
   const [clientsCount, setClientsCount] = useState(0);
   const [yearsOfExperience, setYearsOfExperience] = useState(0);
   const [projects, setProjects] = useState(0);
@@ -9,10 +9,9 @@ const OtherExperience = ({ experience }) => {
   useEffect(() => {
     // Fetch clients count and years of experience from your data source or perform calculations
     // For now, let's set some placeholder values
-    console.log(experience);
-    setClientsCount(experience?.clients);
-    setProjects(experience?.projects);
-    setYearsOfExperience(experience?.years);
+    setClientsCount(15);
+    setProjects(25);
+    setYearsOfExperience(4);
   }, []);
 
   return (

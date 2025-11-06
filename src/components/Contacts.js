@@ -2,20 +2,31 @@ import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
-const Contact = ({ contacts }) => {
-  console.log(contacts);
+const Contact = () => {
   return (
     <section>
       <h2>My Contacts</h2>
       <div>
-        {contacts.map((item, index) => (
-          <p key={index}>
-            {item.description}{" "}
-            <a href={item.link} target="_blank" rel="noopener noreferrer">
-              {item.title}
-            </a>
-          </p>
-        ))}
+        <p>
+          Find me on GitHub:{" "}
+          <a
+            href="https://github.com/Hak-MMD"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub /> GitHub
+          </a>
+        </p>
+        <p>
+          Connect with me on LinkedIn:{" "}
+          <a
+            href="https://www.linkedin.com/in/mykhaylo-maslyuk/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin /> LinkedIn
+          </a>
+        </p>
         <p>
           Email me at:{" "}
           <a href="mailto:myhamike@gmail.com">
